@@ -1,0 +1,16 @@
+@font-face {font-family: "iconfont";
+  src: url('https://at.alicdn.com/t/font_1128539_5mx5k74buvx.ttf?t=1554645653904') format('truetype')
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-weixin:before {
+  content: "\e615";
+}
+

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator class="change">
+    到{{}}
+  </navigator>
+  <text class="iconfont icon-weixin"></text>
+</view>
