@@ -1,5 +1,5 @@
 @font-face {font-family: "iconfont";
-  src: url('https://at.alicdn.com/t/font_1128539_5mx5k74buvx.ttf?t=1554645653904') format('truetype')
+  src: url('https://at.alicdn.com/t/font_1128539_js2fkck0opq.ttf?t=1554692482644') format('truetype')
 }
 
 .iconfont {
@@ -12,5 +12,9 @@
 
 .icon-weixin:before {
   content: "\e615";
+}
+
+.icon-xiala:before {
+  content: "\e65b";
 }
 

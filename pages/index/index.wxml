@@ -1,7 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-  <navigator class="change">
-    到{{}}
+ <view class="change-wrapper" >
+    <navigator class="change"
+    url="/pages/change/change"
+    hover-class="navigator-hover">
+    到{{lang}}
   </navigator>
-  <text class="iconfont icon-weixin"></text>
+  <text class="iconfont icon-xiala"></text>
+ </view>
+ <view>
+    <textarea bindblur="bindTextAreaBlur" placeholder="请输入要翻译的内容" class="originalText"/>
+ </view>
+  <view class="translation-wrap">
+    <view>翻译文本如下：</view>
+    <text class="translation">{{translationText}}</text>
+  </view>
 </view>

@@ -1,5 +1,5 @@
 <view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+    <block wx:for="{{translationHistory}}" wx:for-index="history" wx:for-item="historyItem">
+      <text>{{historyItem}}</text>
+    </block>
 </view>

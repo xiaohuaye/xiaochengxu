@@ -1,18 +1,22 @@
 // pages/change/change.js
+var app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    langsArry:["xibanya","chinese","English"],
+    currentLang: ''
   },
-
+  selectLang :function(e){
+    this.setData({currentLang : e.currentTarget.dataset.lang})
+    app.globalData.lang = this.data.currentLang
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({currentLang : app.globalData.lang})
   },
 
   /**
@@ -26,14 +30,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    
   },
 
   /**

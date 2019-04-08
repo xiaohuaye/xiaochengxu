@@ -1,4 +1,32 @@
 /**index.wxss**/
 .change{
+  
+  padding-left:33px;
+}
+.change-wrapper{
+  display: flex;
+  width: 700rpx;
   background-color: #f6f9fe;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.icon-xiala{
+  padding-top:5px;
+
+}
+.originalText{
+  height: 300rpx;
+  width: 700rpx;
+  border: 1px red solid;
+  overflow: auto;
+}
+.translation{
+  border: 1px solid red;
+  display: inline-block;
+  height: 500rpx;
+  width: 700rpx;
+  overflow: autol;
+}
+.navigator-hover{
+  color:blue;
 }
