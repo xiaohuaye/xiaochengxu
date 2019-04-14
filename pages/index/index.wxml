@@ -4,7 +4,7 @@
     <navigator class="change"
     url="/pages/change/change"
     hover-class="navigator-hover">
-    到{{lang}}
+    到{{currentLang}}
   </navigator>
   <text class="iconfont icon-xiala"></text>
  </view>

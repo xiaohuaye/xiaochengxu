@@ -5,18 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-    langsArry:["xibanya","chinese","English"],
-    currentLang: ''
+    langsArry:[],
+    langsArryChinese:[],
+    currentLang: '',
+    currentLangIndex: null
   },
   selectLang :function(e){
+    console.log(e)
     this.setData({currentLang : e.currentTarget.dataset.lang})
-    app.globalData.lang = this.data.currentLang
+    this.setData({currentLangIndex : e.currentTarget.dataset.index})
+    app.globalData.currentLang = this.data.currentLang
+    app.globalData.langIndex = this.data.currentLangIndex
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({currentLang : app.globalData.lang})
+    this.setData({langsArry : app.globalData.langsArry})
+    this.setData({langsArryChinese : app.globalData.langsArryChinese})
   },
 
   /**
@@ -30,7 +36,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    this.setData({currentLang : app.globalData.currentLang})
   },
 
   /**

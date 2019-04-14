@@ -1,6 +1,7 @@
 <!--pages/change/change.wxml-->
 <view class="">
-    <block wx:for="{{langsArry}}" wx:for-index="langID" wx:for-item="langselect">
-        <view bindtap="selectLang" data-lang="{{langselect}}">{{langselect}}</view><text hidden="{{langselect !== currentLang}}" class="" selectable="false" space="false" decode="false">√</text>
+    <block wx:for="{{langsArryChinese}}" wx:for-index="langID" wx:for-item="langselect">
+        <view bindtap="selectLang" data-lang="{{langselect}}" data-index="{{langID}}">{{langselect}}</view>
+        <text hidden="{{langselect !== currentLang}}" class="" selectable="false" space="false" decode="false">√</text>
     </block>
 </view>
