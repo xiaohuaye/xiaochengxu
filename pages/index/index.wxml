@@ -1,18 +1,23 @@
 <!--index.wxml-->
 <view class="container">
- <view class="change-wrapper" >
-    <navigator class="change"
-    url="/pages/change/change"
-    hover-class="navigator-hover">
-    到{{currentLang}}
-  </navigator>
-  <text class="iconfont icon-xiala"></text>
- </view>
+    <i-cell title="点击选择语言（到{{currentLang}}）" is-link hover-class="navigator-hover" url="/pages/change/change" class="change">
+    </i-cell>
  <view>
-    <textarea bindblur="bindTextAreaBlur" placeholder="请输入要翻译的内容" class="originalText"/>
+    <view class="card-wrap">
+      <i-card title="请输入要翻译的内容" >
+      <view slot="content">
+        <textarea bindblur="bindTextAreaBlur" class="originalText" value="{{seletHistory}}"/>
+      </view>
+      </i-card>
+    </view>   
+    <view class="card-wrap">
+      <i-card title="翻译文本如下：">
+      <view slot="content">
+        <text class="translation">{{translationText}}</text>
+      </view>
+    </i-card>   
+    </view>
+    
+    
  </view>
-  <view class="translation-wrap">
-    <view>翻译文本如下：</view>
-    <text class="translation">{{translationText}}</text>
-  </view>
 </view>

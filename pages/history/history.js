@@ -1,3 +1,4 @@
+var app = getApp()
 Page({
   data: {
     text: "Page history",
@@ -15,6 +16,7 @@ Page({
   },
   onReady: function () {
     // 页面渲染完成
+   
   },
   onShow: function () {
     // 页面显示
@@ -24,5 +26,9 @@ Page({
   },
   onUnload: function () {
     // 页面关闭
-  }
+  },
+  selectHistory: function(index){
+      app.globalData.seletHistory = index.target.dataset.historyitem
+    }
+ 
 })

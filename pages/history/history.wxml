@@ -1,5 +1,9 @@
 <view class="container">
-    <block wx:for="{{translationHistory}}" wx:for-index="history" wx:for-item="historyItem">
-      <text>{{historyItem}}</text>
-    </block>
+  <view class="title">点击历史记录跳转</view>  
+  <i-cell-group>
+    <i-cell is-link url="/pages/index/index" link-type="switchTab" bindtap="selectHistory" data-historyitem="{{historyItem}}"
+    wx:for="{{ translationHistory }}" wx:for-index="index" wx:key="{{index}}" wx:for-item="historyItem">
+      {{historyItem}}
+    </i-cell>
+  </i-cell-group>
 </view>
